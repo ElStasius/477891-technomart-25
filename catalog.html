@@ -11,15 +11,15 @@
           <img class="header-top-logo" src="" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
         </a>
         <form class="header-top-form-search" action="" method="get">
-          <input class="form-search-btn" type="submit" value="">
+          <button class="form-search-btn" type="submit" name="form-search-button"></button>
           <input class="form-search-field" type="search" name="search" value="Поиск">
         </form>
         <ul class="header-top-counters-list">
-          <li class="count-item wishlist-count">
-            <a class="count-item-btn" href="#">Закладки: 0</a>
+          <li class="count-item">
+            <a class="count-item-btn wishlist-count-btn" href="#">Закладки: 0</a>
           </li>
           <li class="count-item">
-            <a class="count-item-btn" href="#">Корзина: 0</a>
+            <a class="count-item-btn cart-count-btn" href="#">Корзина: 0</a>
           </li>
           <li class="count-item checkout-cart">
             <a class="count-item-btn checkout-cart-btn" href="#">Оформить заказ</a>
@@ -68,6 +68,34 @@
       </ul>
       <section class="filters">
         <h2 class="section-title">Фильтр:</h2>
+        <form class="form-filters" action="echo.htmlacademy.html" method="post">
+          <fieldset class="filter-range-price">
+            <legend>Цена:</legend>
+
+
+          </fieldset>
+          <fieldset class="filter-brands">
+            <legend>Производители:</legend>
+            <input id="filter-brand_bosch" type="checkbox" name="checkbox-filter-brand" value="brand-bosch">
+            <label for="filter-brand_bosch">Bosch</label>
+            <input id="filter-brand_interskol" type="checkbox" name="checkbox-filter-brand" value="brand-interskol">
+            <label for="filter-brand_interskol">Интерскол</label>
+            <input id="filter-brand_makita" type="checkbox" name="checkbox-filter-brand" value="brand-makita">
+            <label for="filter-brand_makita">Makita</label>
+            <input id="filter-brand_dewalt" type="checkbox" name="checkbox-filter-brand" value="brand-dewalt">
+            <label for="filter-brand_dewalt">Dewalt</label>
+            <input id="filter-brand_hitachi" type="checkbox" name="checkbox-filter-brand" value="brand-hitachi">
+            <label for="filter-brand_hitachi">Hitachi</label>
+          </fieldset>
+          <fieldset class="filter-power">
+            <legend>Питание:</legend>
+            <input id="filter-power_battery" type="radio" name="radio-filter-power" value="Аккумуляторные">
+            <label for="filter-power_battery">Аккумуляторные</label>
+            <input id="filter-power_mains" type="radio" name="radio-filter-power" value="Сетевые">
+            <label for="filter-power_mains">Сетевые</label>
+          </fieldset>
+          <button class="form-filters-btn" type="sumbit" name="form-filters-button">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2 class="section-title">Сортировка:</h2>
@@ -75,6 +103,10 @@
           <li class="sort-item"><a class="sort-item-link" href="#">по цене</a></li>
           <li class="sort-item"><a class="sort-item-link" href="#">по типу</a></li>
           <li class="sort-item"><a class="sort-item-link" href="#">по функционалу</a></li>
+        </ul>
+        <ul class="sort-list-buttons">
+          <li class="sort-item-buttons"><a class="sort-item-btn sort-item-up-btn" href="#"></a></li>
+          <li class="sort-item-buttons"><a class="sort-item-btn sort-item-down-btn" href="#"></a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -188,6 +220,18 @@
             <a class="product-item-new-price-btn" href="#"><span class="product-item-new-price">12500 Р.</span></a>
           </li>
         </ul>
+        <section class="modal modal-add-to-cart">
+          <h2 class="visually-hidden" aria-label="Всплывающее окно о добавлении товара в корзину">Товар добавлен в корзину</h2>
+          <span class="modal-title">Товар добавлен в корзину!</span>
+          <ul class="modal-buttons">
+           <li>
+             <a class="modal-btn check-btn" href="#">Оформить заказ</a>
+           </li>
+           <li>
+             <a class="modal-btn close-btn" href="#">Продолжить покупки</a>
+           </li>
+         </ul>
+        </section>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -206,7 +250,7 @@
       <footer class="footer-main">
         <section class="footer-top">
           <img class="footer-top-logo" src="" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
-          <ul class="footer-top-menu-list">
+          <ul class="footer-top-menu-list" aria-label="Список основных разделов">
             <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Компания</a></li>
             <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Новости</a></li>
             <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Каталог</a></li>
@@ -216,7 +260,7 @@
         </section>
         <section class="footer-mid">
           <p class="footer-mid-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  +7 (812) 555-05-55 </p>
-          <ul class="footer-mid-menu-list">
+          <ul class="footer-mid-menu-list" aria-label="Каталог товаров">
             <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Материалы</a></li>
             <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Техника</a></li>
             <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Инструмент</a></li>
@@ -225,7 +269,7 @@
         </section>
         <section class="footer-bottom">
           <p class="footer-bottom-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-          <ul class="footer-bottom-social-list">
+          <ul class="footer-bottom-social-list" aria-label="Кнопки социальных сетей">
             <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">BK</a></li>
             <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">FB</a></li>
             <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">IN</a></li>

@@ -11,15 +11,15 @@
               <img class="header-top-logo" src="" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
             </a>
             <form class="header-top-form-search" action="" method="get">
-              <input class="form-search-btn" type="submit" value="">
-              <input class="form-search-field" type="search" name="search" value="Поиск">
+              <button class="form-search-btn" type="submit" name="form-search-button"></button>
+              <input class="form-search-field" type="search" name="search" placeholder="Поиск">
             </form>
             <ul class="header-top-counters-list">
-              <li class="count-item wishlist-count">
-                <a class="count-item-btn" href="#">Закладки: 0</a>
+              <li class="count-item">
+                <a class="count-item-btn wishlist-count-btn" href="#">Закладки: 0</a>
               </li>
               <li class="count-item">
-                <a class="count-item-btn" href="#">Корзина: 0</a>
+                <a class="count-item-btn cart-count-btn" href="#">Корзина: 0</a>
               </li>
               <li class="count-item checkout-cart">
                 <a class="count-item-btn checkout-cart-btn" href="#">Оформить заказ</a>
@@ -53,7 +53,40 @@
         </header>
         <main class="container">
           <section class="banners">
-
+            <ul class="banners-list">
+              <li class="banner-item yellow sticker-new">
+                <h3 class="banner-item-title">Материал</h3>
+                <a class="banner-item-btn" href="#">На любой вкус</a>
+              </li>
+              <li class="banner-item blue">
+                <h3 class="banner-item-title">Инструмент</h3>
+                <a class="banner-item-btn " href="#">На все случаи</a>
+              </li>
+              <li class="banner-item pink">
+                <h3 class="banner-item-title">Техника</h3>
+                <a class="banner-item-btn " href="#">Для стройки</a>
+              </li>
+              <li class="banner-item banner-item-slider">
+                <div class="banner-slider banner__slider-1">
+                  <h3 class="banner__slider-title">Перфораторы</h3>
+                  <p class="banner__slider-desc">Настоящие мужские игрушки</p>
+                  <a class="banner-item-btn banners__slider-btn" href="#">Открыть каталог</a>
+                </div>
+                <div class="banner-slider banner__slider-2">
+                  <h3 class="banner__slider-title">Дрели</h3>
+                  <p class="banner__slider-desc">Соседям на радость!</p>
+                  <a class="banner-item-btn banners__slider-btn" href="#">Открыть каталог</a>
+                </div>
+              </li>
+              <li class="banner-item green">
+                <h3 class="banner-item-title">Скидки 50%</h3>
+                <a class="banner-item-btn " href="#">На 350 товаров</a>
+              </li>
+              <li class="banner-item orange">
+                <h3 class="banner-item-title">Доставка</h3>
+                <a class="banner-item-btn" href="#">Бесплатно</a>
+              </li>
+            </ul>
           </section>
           <section class="wrapper">
             <header class="section-header">
@@ -163,8 +196,32 @@
                 <li class="service-item"><a class="service-item-btn" href="#">Гарантия</a></li>
                 <li class="service-item"><a class="service-item-btn" href="#">Кредит</a></li>
               </ul>
-              <div class="service-slider">
-              </div>
+              <ul class="services-sliders">
+                <li class="service-slider service-slider-delivery">
+                  <h3 class="service-slider-title"></h3>
+                  <p class="service-slider-desc">
+                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  </p>
+                  <img class="service-slider-foto" src="" alt="Картинка раздела доставка">
+                </li>
+                <li class="service-slider service-slider-warranty">
+                  <h3 class="service-slider-title">Гарантия</h3>
+                  <p class="service-slider-desc">Если купленный у нас товар поломается или заискрит,
+                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть
+                    уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                  <img class="service-slider-foto" src="" alt="Картинка раздела гарантия">
+                </li>
+                <li class="service-slider service-slider-credit">
+                  <h3 class="service-slider-title">Кредит</h3>
+                  <p class="service-slider-desc">Залезть в долговую яму стало проще!
+                    Кредитные консультанты придут вам на помощь
+                  </p>
+                  <img class="service-slider-foto" src="" alt="Картинка раздела кредит">
+                </li>
+              </ul>
             </div>
           </section>
           <section class="wrapper">
@@ -174,7 +231,7 @@
               </header>
               <p class="about-company-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
               <p class="about-company-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-              <ul class="delivery-list">
+              <ul class="delivery-list" aria-label="Список транспортных компаний">
                 <li class="delivery-item">Деловые линии</li>
                 <li class="delivery-item">Автотрейдинг</li>
                 <li class="delivery-item">ЖелДорЭкспедиция</li>
@@ -186,15 +243,39 @@
                 <h2 class="section-header-title">Контакты</h2>
               </header>
               <p class="contact-info">Вы можете забрать товар сами, заехав в наш офис:</p>
-              <a class="contact-map" href="#"><img src="img/yandex-map-small.jpg" width="300" height="158" alt="Адрес на яндекс карте"></a>
+              <a class="contact-map" href="#"><img src="img/yandex-map-small.jpg" width="300" height="158" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
               <a class="contact-btn" href="#">Заблудились? Напишите нам!</a>
             </div>
+          </section>
+          <section class="modal modal-map">
+            <h2 class="visually-hidden" aria-label="Всплывающее окно с увеличенной картой">Большая карта</h2>
+            <img src="" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <button class="close-btn" type="button" name="button-close"></button>
+          </section>
+          <section class="modal modal-write-us">
+            <h2 class="visually-hidden" aria-label="Всплывающее окно с формой для отправки писем">Напишите нам</h2>
+            <form class="form-write-us" action="echo.htmlacademy.html" method="post">
+              <label for="write-us_name">
+                 Ваше имя:
+              </label>
+              <input id="write-us_name" type="text" name="name" placeholder="Имя Фамалия">
+              <label for="write-us_email">
+                Ваш e-mail:
+              </label>
+              <input id="write-us_email" type="email" name="email" placeholder="email@example.com">
+              <label for="write-us_text">
+                Текст письма:
+              </label>
+              <textarea id="write-us_text" name="text" placeholder="В свободной форме">
+              </textarea>
+              <button class="form-submit-btn close-btn" type="submit" name="form-submit-button">Отправить</button>
+            </form>
           </section>
         </main>
         <footer class="footer-main">
           <section class="footer-top">
             <img class="footer-top-logo" src="" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
-            <ul class="footer-top-menu-list">
+            <ul class="footer-top-menu-list" aria-label="Список основных разделов">
               <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Компания</a></li>
               <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Новости</a></li>
               <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Каталог</a></li>
@@ -204,7 +285,7 @@
           </section>
           <section class="footer-mid">
             <p class="footer-mid-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
-            <ul class="footer-mid-menu-list">
+            <ul class="footer-mid-menu-list" aria-label="Каталог товаров">
               <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Материалы</a></li>
               <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Техника</a></li>
               <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Инструмент</a></li>
@@ -213,7 +294,7 @@
           </section>
           <section class="footer-bottom">
             <p class="footer-bottom-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-            <ul class="footer-bottom-social-list">
+            <ul class="footer-bottom-social-list" aria-label="Кнопки социальных сетей">
               <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">BK</a></li>
               <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">FB</a></li>
               <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">IN</a></li>
