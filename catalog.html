@@ -9,7 +9,7 @@
       <div class="header-top">
         <a class="header-top-logo-link" href="index.html" title="Логотип интернет-магазина Техномарт"></a>
         <form class="header-top-form-search" action="https://htmlacademy.ru/echo" method="get">
-          <button class="form-search-btn" type="submit" name="form-search-button"></button>
+          <button class="form-search-btn" type="submit"></button>
           <input class="form-search-field" type="search" name="search" placeholder="Поиск">
         </form>
         <ul class="header-top-counters-list">
@@ -35,7 +35,9 @@
         <div class="header-mid-authorized-block">
           <div class="header-mid-for-authorized">
             <p class="authorized-profile">
-              <a class="authorized-profile-btn" href="#">Равшан Джамшутович</a>
+              <a class="authorized-profile-btn" href="https://htmlacademy.ru/profile/id477891">
+                Равшан Джамшутович
+              </a>
               <a class="authorized-profile-exit-btn" href="#" title="Выйти из аккаунта"></a>
             </p>
             <ul class="authorized-accaunt-list">
@@ -43,10 +45,6 @@
               <li class="authorized-accaunt-item"><a class="authorized-accaunt-item-btn" href="#">Личный кабинет</a></li>
             </ul>
           </div>
-          <ul class="header-mid-unauthorized-list">
-            <li class="unauthorized-accaunt-item"><a class="unauthorized-accaunt-item-btn" href="#">Войти</a></li>
-            <li class="unauthorized-accaunt-item"><a class="unauthorized-accaunt-item-btn" href="#">Регистрация</a></li>
-          </ul>
         </div>
       </div>
       <nav class="header-menu">
@@ -65,9 +63,11 @@
       <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="index.html"></a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-item-link">Каталог</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-item-link" href="#">Инструменты</a></li>
-        <li class="breadcrumbs-item breadcrumbs-item-current"><a class="breadcrumbs-item-link" href="#">Перфораторы</a></li>
+        <li class="breadcrumbs-item breadcrumbs-item-current">
+          <a class="breadcrumbs-item-link" href="#">Перфораторы</a>
+        </li>
       </ul>
       <section class="filters">
         <h2 class="section-title">Фильтр:</h2>
@@ -97,7 +97,7 @@
             <input id="filter-power_mains" type="radio" name="radio-filter-power" value="Сетевые">
             <label for="filter-power_mains">Сетевые</label>
           </fieldset>
-          <button class="form-filters-btn" type="submit" name="form-filters-button">Показать</button>
+          <button class="form-filters-btn" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
@@ -107,9 +107,13 @@
           <li class="sort-item"><a class="sort-item-link" href="#">по типу</a></li>
           <li class="sort-item"><a class="sort-item-link" href="#">по функционалу</a></li>
         </ul>
-        <ul class="sort-list-buttons">
-          <li class="sort-item-buttons"><a class="sort-item-btn sort-item-up-btn" href="#"></a></li>
-          <li class="sort-item-buttons"><a class="sort-item-btn sort-item-down-btn" href="#"></a></li>
+        <ul class="sort-line-list">
+          <li>
+            <input class="sort-line-btn sort-line-up" type="radio" name="sort" aria-label="Сортировка вверх" checked>
+          </li>
+          <li>
+            <input class="sort-line-btn sort-line-down" type="radio" name="sort" aria-label="Сортировка вниз">
+          </li>
         </ul>
       </section>
       <section class="catalog">
@@ -225,7 +229,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -247,7 +251,7 @@
         <ul class="footer-top-menu-list" aria-label="Список основных разделов">
           <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Компания</a></li>
           <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Новости</a></li>
-          <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Каталог</a></li>
+          <li class="footer-top-menu-item"><a class="footer-top-menu-link">Каталог</a></li>
           <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Доставка</a></li>
           <li class="footer-top-menu-item"><a class="footer-top-menu-link" href="#">Контакты</a></li>
         </ul>
@@ -260,10 +264,18 @@
           </a>
         </div>
         <ul class="footer-mid-menu-list" aria-label="Каталог товаров">
-          <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Материалы</a></li>
-          <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Техника</a></li>
-          <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Инструмент</a></li>
-          <li class="footer-mid-menu-item"><a class="footer-mid-menu-link" href="#">Спецпредложения</a></li>
+          <li class="footer-mid-menu-item">
+            <a class="footer-mid-menu-link" href="#">Материалы</a>
+          </li>
+          <li class="footer-mid-menu-item">
+            <a class="footer-mid-menu-link" href="#">Техника</a>
+          </li>
+          <li class="footer-mid-menu-item">
+            <a class="footer-mid-menu-link" href="#">Инструмент</a>
+          </li>
+          <li class="footer-mid-menu-item">
+            <a class="footer-mid-menu-link" href="#">Спецпредложения</a>
+          </li>
         </ul>
       </div>
       <div class="footer-bottom">
@@ -273,8 +285,12 @@
           <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">FB</a></li>
           <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">IN</a></li>
         </ul>
-        <p class="footer-bottom-callback">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <b class="footer-bottom-author">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></b>
+        <p class="footer-bottom-callback">
+          Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <b class="footer-bottom-author">
+          Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </b>
       </div>
     </footer>
     <section class="modal modal-add-to-cart">
