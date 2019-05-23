@@ -10,10 +10,11 @@
   <body>
     <header class="header-main">
       <div class="header-top">
-        <a class="header-top-logo-link" title="Логотип интернет-магазина Техномарт"></a>
+        <a class="header-top-logo-link" title="Логотип интернет-магазина Техномарт">Логотип</a>
         <form class="header-top-form-search" action="https://htmlacademy.ru/echo" method="get">
-          <button class="form-search-btn" type="submit"></button>
-          <input class="form-search-field" type="search" name="search" placeholder="Поиск">
+          <button class="form-search-btn visually-hidden" type="submit"></button>
+          <label class="visually-hidden" for="form-search">Поиск</label>
+          <input class="form-search-field" id="form-search" type="search" name="search" placeholder="Поиск">
         </form>
         <ul class="header-top-counters-list">
           <li class="count-item">
@@ -75,15 +76,17 @@
             <a class="banner-item-btn" href="#">Для стройки</a>
           </li>
           <li class="banner-item banner-item-slider">
-            <div class="banner-slider banner__slider-1">
-              <h3 class="banner__slider-title">Перфораторы</h3>
-              <p class="banner__slider-desc">Настоящие мужские игрушки</p>
-              <a class="banner-item-btn banners__slider-btn" href="catalog.html">Открыть каталог</a>
+            <div class="banner-slider banner-slider-1">
+              <h3 class="banner-slider-title">Перфораторы</h3>
+              <p class="banner-slider-desc">Настоящие мужские игрушки</p>
+              <img class="banner-slider-foto" src="img/slider-1.jpg" width="620" height="266" alt="Каталог перфараторов">
+              <a class="banner-item-btn banner-slider-btn" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="banner-slider banner__slider-2">
-              <h3 class="banner__slider-title">Дрели</h3>
-              <p class="banner__slider-desc">Соседям на радость!</p>
-              <a class="banner-item-btn banners__slider-btn" href="catalog.html">Открыть каталог</a>
+            <div class="banner-slider banner-slider-2">
+              <h3 class="banner-slider-title">Дрели</h3>
+              <p class="banner-slider-desc">Соседям на радость!</p>
+              <img class="banner-slider-foto" src="img/slider-2.jpg" width="620" height="266" alt="Каталог дрелей">
+              <a class="banner-item-btn banner-slider-btn" href="catalog.html">Открыть каталог</a>
             </div>
           </li>
           <li class="banner-item green">
@@ -147,7 +150,6 @@
               </ul>
               <img class="product-item-foto" src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
-            <del class="product-item-old-price"></del>
             <a class="product-item-new-price-btn" href="#">12500 Р.</a>
           </li>
         </ul>
@@ -270,7 +272,7 @@
 
     <footer class="footer-main">
       <div class="footer-top">
-        <a class="footer-top-logo-link" title="Логотип интернет-магазина Техномарт"></a>
+        <a class="footer-top-logo-link" title="Логотип интернет-магазина Техномарт">Логотип</a>
         <ul class="footer-top-menu-list" aria-label="Список основных разделов">
           <li class="footer-top-menu-item">
             <a class="footer-top-menu-link" href="#">Компания</a></li>
@@ -318,7 +320,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Полноразмерная карта</h2>
-      <img src="img/yandex-map-big.jpg" width="940" height="447" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img class="modal-map-big" src="img/yandex-map-big.jpg" width="940" height="447" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button class="close-btn" type="button"></button>
     </section>
 
