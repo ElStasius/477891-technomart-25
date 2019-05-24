@@ -10,9 +10,11 @@
   <body>
     <header class="header-main">
       <div class="header-top">
-        <a class="header-top-logo-link" title="Логотип интернет-магазина Техномарт">Логотип</a>
+        <a class="header-top-logo-link">
+          <img class="header-top-logo" src="img/logo-technomart.svg" width="116" height="26" alt="Логотип интернет-магазина Техномарт">
+        </a>
         <form class="header-top-form-search" action="https://htmlacademy.ru/echo" method="get">
-          <button class="form-search-btn visually-hidden" type="submit"></button>
+          <button class="form-search-btn visually-hidden" type="submit">Искать</button>
           <label class="visually-hidden" for="form-search">Поиск</label>
           <input class="form-search-field" id="form-search" type="search" name="search" placeholder="Поиск">
         </form>
@@ -80,12 +82,32 @@
               <h3 class="banner-slider-title">Перфораторы</h3>
               <p class="banner-slider-desc">Настоящие мужские игрушки</p>
               <img class="banner-slider-foto" src="img/slider-1.jpg" width="620" height="266" alt="Каталог перфараторов">
+              <button class="banner-slider-switch slider-switch-right" type="button" title="Вправо">Вправо</button>
+              <button class="banner-slider-switch slider-switch-left" type="button" title="Влево">Влево</button>
+              <ol>
+                <li>
+                  <a class="banner-slider-pointer slider-pointer-first" title="Первый слайдер">Первый</a>
+                </li>
+                <li>
+                  <a class="banner-slider-pointer slider-pointer-second" href="#" title="Второй слайдер">Второй</a>
+                </li>
+              </ol>
               <a class="banner-item-btn banner-slider-btn" href="catalog.html">Открыть каталог</a>
             </div>
             <div class="banner-slider banner-slider-2">
               <h3 class="banner-slider-title">Дрели</h3>
               <p class="banner-slider-desc">Соседям на радость!</p>
               <img class="banner-slider-foto" src="img/slider-2.jpg" width="620" height="266" alt="Каталог дрелей">
+              <button class="banner-slider-switch slider-switch-right" type="button" title="Вправо">Вправо</button>
+              <button class="banner-slider-switch slider-switch-left" type="button" title="Влево">Влево</button>
+              <ol>
+                <li>
+                  <a class="banner-slider-pointer slider-pointer-first" title="Первый слайдер">Первый</a>
+                </li>
+                <li>
+                  <a class="banner-slider-pointer slider-pointer-second" href="#" title="Второй слайдер">Второй</a>
+                </li>
+              </ol>
               <a class="banner-item-btn banner-slider-btn" href="catalog.html">Открыть каталог</a>
             </div>
           </li>
@@ -112,7 +134,7 @@
                 <li class="product-item-btn"><a class="add-to-cart-btn" href="#">Купить</a></li>
                 <li class="product-item-btn"><a class="add-to-wishlist-btn" href="#">В закладки</a></li>
               </ul>
-              <img class="product-item-foto" src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <img class="product-item-foto" src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <del class="product-item-old-price">32500 Р.</del>
             <a class="product-item-new-price-btn" href="#">25500 Р.</a>
@@ -124,7 +146,7 @@
                 <li class="product-item-btn"><a class="add-to-cart-btn" href="#">Купить</a></li>
                 <li class="product-item-btn"><a class="add-to-wishlist-btn" href="#">В закладки</a></li>
               </ul>
-              <img class="product-item-foto" src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img class="product-item-foto" src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <del class="product-item-old-price">25500 Р.</del>
             <a class="product-item-new-price-btn" href="#">15500 Р.</a>
@@ -136,7 +158,7 @@
                 <li class="product-item-btn"><a class="add-to-cart-btn" href="#">Купить</a></li>
                 <li class="product-item-btn"><a class="add-to-wishlist-btn" href="#">В закладки</a></li>
               </ul>
-              <img class="product-item-foto" src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img class="product-item-foto" src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <del class="product-item-old-price">30500 Р.</del>
             <a class="product-item-new-price-btn" href="#">25500 Р.</a>
@@ -148,7 +170,7 @@
                 <li class="product-item-btn"><a class="add-to-cart-btn" href="#">Купить</a></li>
                 <li class="product-item-btn"><a class="add-to-wishlist-btn" href="#">В закладки</a></li>
               </ul>
-              <img class="product-item-foto" src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img class="product-item-foto" src="img/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <a class="product-item-new-price-btn" href="#">12500 Р.</a>
           </li>
@@ -162,43 +184,43 @@
         <ul class="brands-list">
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/Bosch.jpg" width="126" height="37" alt="Логотип Bosch">
+              <img class="brands-item-foto" src="img/bosch.jpg" width="126" height="37" alt="Логотип Bosch">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/Makita.jpg" width="123" height="40" alt="Логотип Makita">
+              <img class="brands-item-foto" src="img/makita.jpg" width="123" height="40" alt="Логотип Makita">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/DeWALT.jpg" width="146" height="44" alt="Логотип DeWELT">
+              <img class="brands-item-foto" src="img/dewalt.jpg" width="146" height="44" alt="Логотип DeWELT">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/Interskol.jpg" width="200" height="88" alt="Логотип Интерскол">
+              <img class="brands-item-foto" src="img/interskol.jpg" width="200" height="88" alt="Логотип Интерскол">
 
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/Hitachi.jpg" width="169" height="31" alt="Логотип Hitachi">
+              <img class="brands-item-foto" src="img/hitachi.jpg" width="169" height="31" alt="Логотип Hitachi">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/LG.jpg" width="121" height="73" alt="Логотип LG">
+              <img class="brands-item-foto" src="img/lg.jpg" width="121" height="73" alt="Логотип LG">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/AEG.jpg" width="151" height="96" alt="Логотип AEG">
+              <img class="brands-item-foto" src="img/aeg.jpg" width="151" height="96" alt="Логотип AEG">
             </a>
           </li>
           <li class="brands-item">
             <a class="brands-item-link" href="#">
-              <img class="brands-item-foto" src="img/Metabo.jpg" width="204" height="69" alt="Логотип Metabo">
+              <img class="brands-item-foto" src="img/metabo.jpg" width="204" height="69" alt="Логотип Metabo">
             </a>
           </li>
         </ul>
@@ -206,12 +228,12 @@
       <section class="wrapper wrapper-lightblue">
         <div class="section-header">
           <h2 class="section-header-title">Сервисы</h2>
-          <p class="section-header-desc">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          <p class="section-header-desc">Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
         <div class="services">
           <ul class="services-list">
-            <li class="service-item"><a class="service-item-btn" href="#">Доставка</a></li>
+            <li class="service-item"><a class="service-item-btn">Доставка</a></li>
             <li class="service-item"><a class="service-item-btn" href="#">Гарантия</a></li>
             <li class="service-item"><a class="service-item-btn" href="#">Кредит</a></li>
           </ul>
@@ -219,23 +241,23 @@
             <li class="service-slider service-slider-delivery">
               <h3 class="service-slider-title">Доставка</h3>
               <p class="service-slider-desc">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
               </p>
             </li>
             <li class="service-slider service-slider-warranty">
               <h3 class="service-slider-title">Гарантия</h3>
               <p class="service-slider-desc">
-                Если купленный у нас товар поломается или заискрит,
+                Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть
-                уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
             <li class="service-slider service-slider-credit">
               <h3 class="service-slider-title">Кредит</h3>
               <p class="service-slider-desc">
-                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь
+                Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь
               </p>
             </li>
           </ul>
@@ -262,7 +284,7 @@
         <div class="contacts">
           <h2 class="section-title">Контакты</h2>
           <p class="contact-info">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="contact-map" href="#">
+          <a class="contact-map" href="https://yandex.ru/maps/-/CCrIuMKa">
             <img src="img/yandex-map-small.jpg" width="300" height="158" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a class="contact-btn" href="#">Заблудились? Напишите нам!</a>
@@ -272,7 +294,9 @@
 
     <footer class="footer-main">
       <div class="footer-top">
-        <a class="footer-top-logo-link" title="Логотип интернет-магазина Техномарт">Логотип</a>
+        <a class="footer-top-logo-link">
+          <img class="header-top-logo" src="img/logo-technomart.svg" width="116" height="26" alt="Логотип интернет-магазина Техномарт">
+        </a>
         <ul class="footer-top-menu-list" aria-label="Список основных разделов">
           <li class="footer-top-menu-item">
             <a class="footer-top-menu-link" href="#">Компания</a></li>
@@ -307,7 +331,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-bottom-copyright">© 2010–2019 Компания<br>«Техномарт»<br>Все права защищены</p>
+        <p class="footer-bottom-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
         <ul class="footer-bottom-social-list" aria-label="Кнопки социальных сетей">
           <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">BK</a></li>
           <li class="footer-bottom-social-item"><a class="social-item-btn" href="#">FB</a></li>
@@ -321,7 +345,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Полноразмерная карта</h2>
       <img class="modal-map-big" src="img/yandex-map-big.jpg" width="940" height="447" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <button class="close-btn" type="button"></button>
+      <button class="close-btn" type="button" title="Закрыть">Закрыть</button>
     </section>
 
     <section class="modal modal-write-us">
@@ -340,7 +364,8 @@
         </label>
         <textarea id="write-us_text" name="text" placeholder="В свободной форме">
         </textarea>
-        <button class="form-submit-btn close-btn" type="submit">Отправить</button>
+        <button class="form-submit-btn" type="submit">Отправить</button>
+        <button class="close-btn" type="button" title="Закрыть">Закрыть</button>
       </form>
     </section>
 
