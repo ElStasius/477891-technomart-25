@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-main">
@@ -35,7 +35,7 @@
       </div>
       <div class="header-mid">
         <div class="header-wrapper">
-          <h1 class="header-mid-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+          <h1 class="header-mid-title">Интернет-магазин строительных&nbsp;материалов и&nbsp;инструментов&nbsp;для&nbsp;ремонта</h1>
           <div class="header-mid-contacts">
             <a class="header-contact-phone" href="tel:+78125550555" title="Позвонить по +78125550555">
               +7 (812) 555-05-55
@@ -85,13 +85,13 @@
         </div>
         <div class="banners-row">
           <div class="banner-item-slider">
-            <div class="banner-slider banner-slider-1">
+            <div class="banner-slider banner-slider-1 slider-shows">
               <h3 class="banner-slider-title">Перфораторы</h3>
               <p class="banner-slider-desc">Настоящие мужские игрушки</p>
               <img class="banner-slider-foto" src="img/slider-1.jpg" width="620" height="266" alt="Каталог перфараторов">
               <a class="button banner-slider-btn" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="banner-slider banner-slider-2 slider-shows">
+            <div class="banner-slider banner-slider-2">
               <h3 class="banner-slider-title">Дрели</h3>
               <p class="banner-slider-desc">Соседям на радость!</p>
               <img class="banner-slider-foto" src="img/slider-2.jpg" width="620" height="266" alt="Каталог дрелей">
@@ -103,10 +103,10 @@
             </div>
             <ol class="banner-slider-pointers">
               <li>
-                <a class="banner-slider-pointer" href="#" title="Первый слайдер"></a>
+                <a class="banner-slider-pointer slider-pointer-active" href="#" title="Первый слайдер"></a>
               </li>
               <li>
-                <a class="banner-slider-pointer slider-pointer-active" title="Второй слайдер"></a>
+                <a class="banner-slider-pointer " title="Второй слайдер"></a>
               </li>
             </ol>
           </div>
@@ -286,7 +286,7 @@
         <div class="contacts">
           <h2 class="section-title">Контакты</h2>
           <p class="contact-info">Вы можете забрать товар сами,<span class="new-line">заехав в наш офис:</span></p>
-          <a class="contact-map" href="https://yandex.ru/maps/-/CCrIuMKa">
+          <a class="contact-map">
             <img src="img/yandex-map-small.jpg" width="300" height="158" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a class="button write_us-btn" href="#">Заблудились? Напишите нам!</a>
@@ -329,9 +329,9 @@
         <div class="footer-wrapper">
           <p class="footer-bottom-copyright">© 2010–2019 Компания «Техномарт»<span class="new-line">Все права защищены</span></p>
           <ul class="footer-bottom-social-list" aria-label="Кнопки социальных сетей">
-            <li><a class="social-btn-vk" href="#"></a></li>
-            <li><a class="social-btn-fb" href="#"></a></li>
-            <li><a class="social-btn-in" href="#"></a></li>
+            <li><a class="social-btn-vk" href="#" title="Вконтакте"></a></li>
+            <li><a class="social-btn-fb" href="#" title="Facebook"></a></li>
+            <li><a class="social-btn-in" href="#" title="Instagram"></a></li>
           </ul>
           <div class="footer-bottom-callback">
             <p>Обратная связь:<span class="new-line"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span></p>
@@ -343,9 +343,12 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Полноразмерная карта</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCrIuMKa" width="940" height="447" frameborder="0" allowfullscreen="true"></iframe>
       <img class="modal-map-big" src="img/yandex-map-big.jpg" width="940" height="447" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button class="close-btn" type="button" title="Закрыть"></button>
     </section>
+    <div class="overlay"></div>
+
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма для отправки писем</h2>
       <form class="form-write-us" action="https://htmlacademy.ru/echo" method="post">
@@ -353,13 +356,13 @@
           <label for="write-us_name">
              Ваше имя:
           </label>
-          <input id="write-us_name" type="text" name="name" placeholder="Имя Фамалия">
+          <input id="write-us_name" type="text" name="name" placeholder="Имя Фамалия" required>
         </div>
         <div>
           <label for="write-us_email">
             Ваш e-mail:
           </label>
-          <input id="write-us_email" type="email" name="email" placeholder="email@example.com">
+          <input id="write-us_email" type="email" name="email" placeholder="email@example.com" required>
         </div>
         <div>
           <label for="write-us_text">
@@ -373,34 +376,6 @@
       <button class="close-btn" type="button" title="Закрыть">Закрыть</button>
     </section>
 
-    <script type="text/javascript">
-      var linkBigMap = document.querySelector(".about-company-link");
-      var popupBigMap = document.querySelector(".modal-map");
-      var closeBigMap = popupBigMap.querySelector(".close-btn");
-
-      linkBigMap.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupBigMap.classList.add("modal-shows");
-      });
-
-      closeBigMap.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupBigMap.classList.remove("modal-shows");
-      });
-
-      var linkWriteUs = document.querySelector(".write_us-btn");
-      var popupWriteUs = document.querySelector(".modal-write-us");
-      var closeWriteUs = popupWriteUs.querySelector(".close-btn");
-
-      linkWriteUs.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupWriteUs.classList.add("modal-shows");
-      });
-
-      closeWriteUs.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupWriteUs.classList.remove("modal-shows");
-      });
-    </script>
+    <script src="js/script.min.js" type="text/javascript"></script>
   </body>
 </html>

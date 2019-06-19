@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="header-main">
@@ -35,7 +35,7 @@
       </div>
       <div class="header-mid">
         <div class="header-wrapper">
-          <p class="header-mid-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+          <p class="header-mid-title">Интернет-магазин строительных&nbsp;материалов и&nbsp;инструментов&nbsp;для&nbsp;ремонта</p>
           <div class="header-mid-contacts">
             <a class="header-contact-phone" href="tel:+78125550555" title="Позвонить по +78125550555">
               +7 (812) 555-05-55
@@ -104,35 +104,35 @@
               <div class="filter-brand-item">
                 <label for="filter-brand_bosch">
                   <input class="visually-hidden" id="filter-brand_bosch" type="checkbox" name="filter-brand-bosch" checked>
-                  <span class="checkbox-indikator"></span>
+                  <span class="checkbox-indicator"></span>
                   Bosch
                 </label>
               </div>
               <div class="filter-brand-item">
                 <label for="filter-brand_interskol">
                   <input class="visually-hidden" id="filter-brand_interskol" type="checkbox" name="filter-brand-interskol">
-                  <span class="checkbox-indikator"></span>
+                  <span class="checkbox-indicator"></span>
                   Интерскол
                 </label>
               </div>
               <div class="filter-brand-item">
                 <label for="filter-brand_makita">
                   <input class="visually-hidden" id="filter-brand_makita" type="checkbox" name="filter-brand-makita" checked>
-                  <span class="checkbox-indikator"></span>
+                  <span class="checkbox-indicator"></span>
                   Makita
                 </label>
               </div>
               <div class="filter-brand-item">
                 <label for="filter-brand_dewalt">
                   <input class="visually-hidden" id="filter-brand_dewalt" type="checkbox" name="filter-brand-dewalt">
-                  <span class="checkbox-indikator"></span>
+                  <span class="checkbox-indicator"></span>
                   Dewalt
                 </label>
               </div>
               <div class="filter-brand-item">
                 <label for="filter-brand_hitachi">
                   <input class="visually-hidden" id="filter-brand_hitachi" type="checkbox" name="filter-brand-hitachi" disabled>
-                  <span class="checkbox-indikator"></span>
+                  <span class="checkbox-indicator"></span>
                   Hitachi
                 </label>
               </div>
@@ -142,14 +142,14 @@
               <div class="filter-power-item">
                 <label for="filter-power_battery">
                   <input class="visually-hidden" id="filter-power_battery" type="radio" name="radio-filter-power" value="Аккумуляторные" checked>
-                  <span class="radio-indikator"></span>
+                  <span class="radio-indicator"></span>
                   Аккумуляторные
                 </label>
               </div>
               <div class="filter-power-item">
                 <label for="filter-power_mains">
                   <input class="visually-hidden" id="filter-power_mains" type="radio" name="radio-filter-power" value="Сетевые">
-                  <span class="radio-indikator"></span>
+                  <span class="radio-indicator"></span>
                   Сетевые
                 </label>
               </div>
@@ -350,9 +350,9 @@
         <div class="footer-wrapper">
           <p class="footer-bottom-copyright">© 2010–2019 Компания «Техномарт»<span class="new-line">Все права защищены</span></p>
           <ul class="footer-bottom-social-list" aria-label="Кнопки социальных сетей">
-            <li><a class="social-btn-vk" href="#"></a></li>
-            <li><a class="social-btn-fb" href="#"></a></li>
-            <li><a class="social-btn-in" href="#"></a></li>
+            <li><a class="social-btn-vk" href="#" title="Вконтакте"></a></li>
+            <li><a class="social-btn-fb" href="#" title="Facebook"></a></li>
+            <li><a class="social-btn-in" href="#" title="Instagram"></a></li>
           </ul>
           <div class="footer-bottom-callback">
             <p>Обратная связь:<span class="new-line"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span></p>
@@ -373,20 +373,6 @@
         </li>
       </ul>
     </section>
-    <script type="text/javascript">
-      var linkAddToCart = document.querySelectorAll(".add-to-cart-btn");
-      var popupAddToCart = document.querySelector(".modal-add-to-cart");
-      var closeAddToCart = popupAddToCart.querySelector(".continue-btn");
-
-      linkAddToCart.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupAddToCart.classList.add("modal-shows");
-      });
-
-      closeAddToCart.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupAddToCart.classList.remove("modal-shows");
-      });
-    </script>
+    <script src="js/script.min.js" type="text/javascript"></script>
   </body>
 </html>
