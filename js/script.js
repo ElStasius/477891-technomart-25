@@ -99,8 +99,8 @@ if (document.querySelector(".modal-map")) {
   });
 }
 
-if (document.querySelector(".write_us-btn")) {
-  var linkWriteUs = document.querySelector(".write_us-btn");
+if (document.querySelector(".write-us-btn")) {
+  var linkWriteUs = document.querySelector(".write-us-btn");
   var popupWriteUs = document.querySelector(".modal-write-us");
   var closeWriteUs = popupWriteUs.querySelector(".close-btn");
 
